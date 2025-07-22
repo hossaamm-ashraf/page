@@ -1,0 +1,377 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  font-family: "Roboto", serif;
+  background-color: black;
+  color: white;
+  position: relative;
+  text-transform: capitalize;
+  padding: 0px 5px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+nav{
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  background-color: black;
+}
+#nav-logo{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#nav-links{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 50%;
+}
+#nav-i{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 5%;
+}
+header{
+  background-image: url("./assets/image/back\ ground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 550px;
+}
+header div{
+  width: 50%;
+  line-height: 25px;
+  padding-left: 20px;
+}p{
+  color: #69675f;
+}
+#h-b{
+  background-color: #d4ad82 ;
+  color: white;
+  display: block;
+  height: 35px;
+  border-radius: 10px;
+  width: 40%;
+  font-size: large;
+  transition: all 0.35s 0s linear;
+}
+#h-b:hover{
+  width: 85%;
+  background-color: #aa5922;
+}
+.qh2 {
+  text-align: center;
+  padding: 10px 0px;
+}
+.spanh2{
+color: #d4ad82;
+}
+#aboutq{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#aboutw{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+#aboute{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+.dd{
+  margin-top: 20px;
+}
+#aboutb{
+  background-color: #d4ad82 ;
+  color: white;
+  display: block;
+  height: 35px;
+  border-radius: 10px;
+  width: 40%;
+  font-size: large;
+  transition: all 0.35s 0s linear;
+  margin-top: 50px;
+}
+#aboutb:hover{
+  width: 85%;
+  background-color: #aa5922;
+}
+#wh2 {
+  text-align: center;
+  padding: 10px 0px;
+}
+main{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items:flex-start;
+}
+section {
+  width: 30%;
+  height: 500px;
+  text-align: center;
+  transition: all 0.5s 0s linear;
+  text-align: center;
+  border: solid 2px #151817;
+  margin: 5px;
+  border-radius: 10px;
+}
+section:hover {
+  background-color: white;  /* تغيير الخلفية عند hover */
+}
+section:hover * {
+  color: black;  /* تغيير اللون لجميع العناصر عند hover */
+  transition: color 0.3s ease;  /* إضافة تأثير انسيابي */
+}
+section * {
+  pointer-events: none;  /* تعطيل التفاعل مع العناصر الداخلية */
+}
+section:hover * {
+  pointer-events: auto;  /* تفعيل التفاعل مع العناصر الداخلية أثناء الـ hover */
+}
+section img{
+  width: 100%;
+  height: 75%;
+}
+section div{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items:flex-start;
+  width: 40%;
+  margin: 20px 30%;
+}
+section button{
+  background-color: #d4ad82;
+  color: white;
+  width: 35%;
+  margin: 0px 32.5%;
+  height: 30px;
+  border-radius: 10px;
+}
+.non{
+  text-decoration: line-through white 3px;
+}
+article{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  width: 100%;
+  height: 40%;
+  text-align: center;
+}
+.ar-d{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+align-content: space-evenly;
+width: 30%;
+border: #151817 solid 3px;
+margin: 5px;
+}
+article img {
+  width: 100%;
+  height: 60%;
+  margin: 20px 0px;
+}
+.ar-d-d{
+  border: #151817 solid 2px;
+  padding: 10px;
+  text-align: center;
+  word-spacing: 10px;
+  margin-top: 5px;
+  width: 50%;
+  margin-right: 20px;
+}
+.ar-d-price{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 40%;
+  margin: 0px 30%;
+}
+.customers{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.customer{
+  text-align: center;
+  width: 30%;
+  border: #151817 3px solid;
+}
+.customer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.customerp1{
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #d4ad82;
+}
+.customerp{
+  margin: 10px;
+  color: white;
+}
+#footer1{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#footer1d{
+  width: 50%;
+}
+#footer1d2{
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #151817;
+}
+#footer1d2 h3{
+  text-align: center;
+  margin-top: 10px;
+}
+#footer1d2 form{
+  /* width: 70%; */
+  height: 70%;
+}
+#b1{
+  background-color: #d4ad82 ;
+  color: white;
+  /* display: block; */
+  height: 35px;
+  border-radius: 10px;
+  width: 40%;
+  font-size: large;
+  border: none;
+  transition: all 0.35s 0s linear;
+  /* margin-top: 50px; */
+}
+#b1:hover{
+ background-color: red;
+ width: 70%;
+}
+.footer1d2-input{
+  display: inline-block;
+  height: 20%;
+  width: 70%;
+  background-color: #151817;
+  color: #69675f;
+  margin:20px 5px ;
+  border: none;
+  text-align: center;
+  text-transform: capitalize;
+  border: 0px;
+}
+.footer1d2-input:focus
+{
+  border: 0px;
+  border: none;
+  
+}
+input:focus
+{
+  border: 0px;
+  border: none;
+}
+/* #footer1d2{
+  width: 100%;
+} */
+iframe{
+  width: 100%;
+}
+#footer2 {
+  text-align: center;
+  background-color:#151817;
+  margin-top: 20px;
+}
+#footer2 i{
+  color: #d4ad82;
+  padding: 10px 5px;
+  font-size: x-large;
+}
+h3 span{
+  color: #d4ad82;
+}
+button{
+  border: none;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  main{
+    justify-content: space-between;
+  }
+  section{
+    width: 40%;
+  }
+  .ar-d{
+    width: 40%;
+  }
+  article{
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width:767px) {
+  main{
+    justify-content: center;
+    width: 100%;
+  }
+  section{
+    width: 50%;
+  }
+  .ar-d{
+    width: 50%;
+  }
+  article{
+    justify-content: center;
+    width: 100%;
+  }
+  .customer{
+    width: 50%;
+  }
+  .customers{
+    justify-content: center;
+    width: 100%;
+  }
+}
