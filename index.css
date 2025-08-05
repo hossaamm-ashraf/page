@@ -150,6 +150,7 @@ section {
 }
 section:hover {
   background-color: white;  /* تغيير الخلفية عند hover */
+  
 }
 section:hover * {
   color: black;  /* تغيير اللون لجميع العناصر عند hover */
@@ -160,6 +161,10 @@ section * {
 }
 section:hover * {
   pointer-events: auto;  /* تفعيل التفاعل مع العناصر الداخلية أثناء الـ hover */
+  box-shadow: 10px 10px 25px #babecc, -10px -10px 25px #ffffff;
+}
+section:hover div h4.non {
+  text-decoration: line-through black 3px;
 }
 section img{
   width: 100%;
@@ -346,7 +351,7 @@ button{
     justify-content: space-between;
   }
   section{
-    width: 40%;
+    width: 30%;
   }
   .ar-d{
     width: 40%;
@@ -361,7 +366,7 @@ button{
     width: 100%;
   }
   section{
-    width: 50%;
+    width: 40%;
   }
   .ar-d{
     width: 50%;
