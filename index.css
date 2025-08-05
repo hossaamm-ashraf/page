@@ -145,26 +145,21 @@ section {
   transition: all 0.5s 0s linear;
   text-align: center;
   border: solid 2px #151817;
-  margin: 5px;
+  margin: 10px;
   border-radius: 10px;
+  padding-bottom: 20px;
 }
 section:hover {
-  background-color: white;  /* تغيير الخلفية عند hover */
-  
+  background-color: white; /* تغيير الخلفية عند hover */
+  box-shadow: 10px 10px 25px #babecc, -10px -10px 25px #ffffff; /* إضافة ظل عند hover */
 }
 section:hover * {
-  color: black;  /* تغيير اللون لجميع العناصر عند hover */
-  transition: color 0.3s ease;  /* إضافة تأثير انسيابي */
+  color: black; /* تغيير اللون لجميع العناصر عند hover */
+  transition: color 0.3s ease; /* إضافة تأثير انسيابي */
+  pointer-events: auto; /* تفعيل التفاعل مع العناصر الداخلية أثناء الـ hover */
 }
 section * {
-  pointer-events: none;  /* تعطيل التفاعل مع العناصر الداخلية */
-}
-section:hover * {
-  pointer-events: auto;  /* تفعيل التفاعل مع العناصر الداخلية أثناء الـ hover */
-  box-shadow: 10px 10px 25px #babecc, -10px -10px 25px #ffffff;
-}
-section:hover div h4.non {
-  text-decoration: line-through black 3px;
+  pointer-events: none; /* تعطيل التفاعل مع العناصر الداخلية */
 }
 section img{
   width: 100%;
