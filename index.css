@@ -151,15 +151,14 @@ section {
 }
 section:hover {
   background-color: white; /* تغيير الخلفية عند hover */
-  box-shadow: 10px 10px 25px #babecc, -10px -10px 25px #ffffff; /* إضافة ظل عند hover */
+  box-shadow: 10px 10px 15px #babecc, -10px -10px 20px #ffffff; /* إضافة ظل عند hover */
 }
 section:hover * {
   color: black; /* تغيير اللون لجميع العناصر عند hover */
   transition: color 0.3s ease; /* إضافة تأثير انسيابي */
-  pointer-events: auto; /* تفعيل التفاعل مع العناصر الداخلية أثناء الـ hover */
 }
-section * {
-  pointer-events: none; /* تعطيل التفاعل مع العناصر الداخلية */
+section:hover div h4.non {
+  text-decoration: line-through black 3px;
 }
 section img{
   width: 100%;
