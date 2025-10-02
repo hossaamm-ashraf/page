@@ -1,8 +1,8 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
-body{
+body {
   font-family: "Roboto", serif;
   background-color: black;
   color: white;
@@ -10,11 +10,11 @@ body{
   text-transform: capitalize;
   padding: 0px 5px;
 }
-a{
+a {
   text-decoration: none;
   color: white;
 }
-nav{
+nav {
   height: 70px;
   position: fixed;
   top: 0px;
@@ -28,7 +28,7 @@ nav{
   padding: 0px 10px;
   background-color: black;
 }
-#nav-logo{
+#nav-logo {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -37,21 +37,21 @@ nav{
   height: 50px;
   border-radius: 50%;
 }
-#nav-links{
+#nav-links {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-content: center;
   width: 50%;
 }
-#nav-i{
+#nav-i {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: center;
   width: 5%;
 }
-header{
+header {
   background-image: url("./assets/image/back\ ground.png");
   background-size: cover;
   background-position: center;
@@ -62,15 +62,16 @@ header{
   align-items: center;
   height: 550px;
 }
-header div{
+header div {
   width: 50%;
   line-height: 25px;
   padding-left: 20px;
-}p{
+}
+p {
   color: #69675f;
 }
-#h-b{
-  background-color: #d4ad82 ;
+#h-b {
+  background-color: #d4ad82;
   color: white;
   display: block;
   height: 35px;
@@ -79,7 +80,7 @@ header div{
   font-size: large;
   transition: all 0.35s 0s linear;
 }
-#h-b:hover{
+#h-b:hover {
   width: 85%;
   background-color: #aa5922;
 }
@@ -87,34 +88,34 @@ header div{
   text-align: center;
   padding: 10px 0px;
 }
-.spanh2{
-color: #d4ad82;
+.spanh2 {
+  color: #d4ad82;
 }
-#aboutq{
+#aboutq {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
-#aboutw{
+#aboutw {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
   width: 50%;
 }
-#aboute{
+#aboute {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
 }
-.dd{
+.dd {
   margin-top: 20px;
 }
-#aboutb{
-  background-color: #d4ad82 ;
+#aboutb {
+  background-color: #d4ad82;
   color: white;
   display: block;
   height: 35px;
@@ -124,7 +125,7 @@ color: #d4ad82;
   transition: all 0.35s 0s linear;
   margin-top: 50px;
 }
-#aboutb:hover{
+#aboutb:hover {
   width: 85%;
   background-color: #aa5922;
 }
@@ -132,58 +133,62 @@ color: #d4ad82;
   text-align: center;
   padding: 10px 0px;
 }
-main{
+main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items:flex-start;
+  align-items: space-between;
 }
 section {
   width: 30%;
   height: 500px;
-  text-align: center;
   transition: all 0.5s 0s linear;
   text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 1px;
+  align-items: center;
+  align-content: center;
   border: solid 2px #151817;
   margin: 10px;
   border-radius: 10px;
-  padding-bottom: 20px;
 }
 section:hover {
   background-color: white; /* تغيير الخلفية عند hover */
-  box-shadow: 10px 10px 15px #babecc, -10px -10px 20px #ffffff; /* إضافة ظل عند hover */
+  box-shadow: 10px 10px 25px #babecc, -10px -10px 25px #ffffff; /* إضافة ظل عند hover */
 }
 section:hover * {
   color: black; /* تغيير اللون لجميع العناصر عند hover */
   transition: color 0.3s ease; /* إضافة تأثير انسيابي */
 }
+
+/* عند hover على section، h4.non داخل div داخل section يتعدل */
 section:hover div h4.non {
   text-decoration: line-through black 3px;
 }
-section img{
+section img {
   width: 100%;
   height: 75%;
 }
-section div{
+section div {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
-  align-items:flex-start;
-  width: 40%;
-  margin: 20px 30%;
+  align-items: center;
+  width: 80%;
 }
-section button{
+section button {
   background-color: #d4ad82;
   color: white;
   width: 35%;
-  margin: 0px 32.5%;
   height: 30px;
   border-radius: 10px;
 }
-.non{
+.non {
   text-decoration: line-through white 3px;
 }
-article{
+article {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -192,21 +197,21 @@ article{
   height: 40%;
   text-align: center;
 }
-.ar-d{
-display: flex;
-flex-flow: row wrap;
-justify-content: space-evenly;
-align-content: space-evenly;
-width: 30%;
-border: #151817 solid 3px;
-margin: 5px;
+.ar-d {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  width: 30%;
+  border: #151817 solid 3px;
+  margin: 5px;
 }
 article img {
   width: 100%;
   height: 60%;
   margin: 20px 0px;
 }
-.ar-d-d{
+.ar-d-d {
   border: #151817 solid 2px;
   padding: 10px;
   text-align: center;
@@ -215,7 +220,7 @@ article img {
   width: 50%;
   margin-right: 20px;
 }
-.ar-d-price{
+.ar-d-price {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -223,13 +228,13 @@ article img {
   width: 40%;
   margin: 0px 30%;
 }
-.customers{
+.customers {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-content: center;
 }
-.customer{
+.customer {
   text-align: center;
   width: 30%;
   border: #151817 3px solid;
@@ -239,44 +244,65 @@ article img {
   height: 200px;
   border-radius: 50%;
 }
-.customerp1{
+.customerp1 {
   font-size: xx-large;
   font-weight: bolder;
   color: #d4ad82;
 }
-.customerp{
+.customerp {
   margin: 10px;
   color: white;
 }
-#footer1{
+#footer1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  height: 500px;
 }
-#footer1d{
+#footer1d {
   width: 50%;
+  height: 100%;
 }
-#footer1d2{
-  flex-grow: 1;
+#footer1d2 {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   background-color: #151817;
 }
-#footer1d2 h3{
+#a5 {
+  height: 10%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+#footer1d2 h3 {
   text-align: center;
   margin-top: 10px;
 }
-#footer1d2 form{
-  /* width: 70%; */
-  height: 70%;
+tr {
+  height: 90px;
 }
-#b1{
-  background-color: #d4ad82 ;
+#footer1d2 form {
+  width: 85%;
+  height: 75%;
+}
+#footer1d2 table {
+  height: 75%;
+}
+#b1 {
+  background-color: #d4ad82;
   color: white;
   /* display: block; */
   height: 35px;
@@ -287,92 +313,106 @@ article img {
   transition: all 0.35s 0s linear;
   /* margin-top: 50px; */
 }
-#b1:hover{
- background-color: red;
- width: 70%;
-}
-.footer1d2-input{
-  display: inline-block;
-  height: 20%;
+#b1:hover {
+  background-color: red;
   width: 70%;
+}
+.footer1d2-input {
+  display: inline-block;
+  height: 60px;
+  width: 100%;
   background-color: #151817;
   color: #69675f;
-  margin:20px 5px ;
+  margin: 20px 5px;
   border: none;
+  font-size: 15px;
   text-align: center;
   text-transform: capitalize;
   border: 0px;
 }
-.footer1d2-input:focus
-{
-  border: 0px;
-  border: none;
-  
+.footer1d2-input:focus {
+  border: 1px solid #69675f;
+  outline: none;
 }
-input:focus
-{
+input:focus {
   border: 0px;
-  border: none;
+  outline: none;
 }
-/* #footer1d2{
+iframe {
   width: 100%;
-} */
-iframe{
-  width: 100%;
+  height: 100%;
 }
 #footer2 {
   text-align: center;
-  background-color:#151817;
+  background-color: #151817;
   margin-top: 20px;
 }
-#footer2 i{
+#footer2 i {
   color: #d4ad82;
   padding: 10px 5px;
   font-size: x-large;
 }
-h3 span{
+h3 span {
   color: #d4ad82;
 }
-button{
+button {
   border: none;
   box-sizing: content-box;
   padding: 10px;
   margin: 3px;
 }
+table {
+  width: 100%;
+  height: 90%;
+}
+.ftd {
+  width: 20%;
+  text-align: center;
+}
+.std {
+  width: 75%;
+  text-align: center;
+}
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-  main{
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
     justify-content: space-between;
   }
-  section{
+  section {
     width: 30%;
   }
-  .ar-d{
+  .ar-d {
     width: 40%;
   }
-  article{
+  article {
     justify-content: space-between;
   }
 }
-@media screen and (max-width:767px) {
-  main{
+@media screen and (max-width: 767px) {
+  #nav-links a {
+    margin: 0 5px;
+  }
+  #nav-i {
+    gap: 7px;
+  }
+  main {
     justify-content: center;
     width: 100%;
   }
-  section{
+  section {
     width: 40%;
   }
-  .ar-d{
+  .ar-d {
     width: 50%;
   }
-  article{
+  article {
     justify-content: center;
     width: 100%;
   }
-  .customer{
+  .customer {
     width: 50%;
   }
-  .customers{
+  .customers {
     justify-content: center;
     width: 100%;
   }
